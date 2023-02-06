@@ -13,6 +13,11 @@ class TestStudent(unittest.TestCase):
         student.alert_santa()
 
         self.assertTrue(student.naughty_list)
+    
+    def test_email(self):
+        student = Student("test", "email")
+        
+        self.assertEqual(student.email, 'testemail@email.com')
 
 
 if __name__ == "__main__":
